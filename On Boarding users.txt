@@ -1,0 +1,65 @@
+# 🧾 User Onboarding Procedure
+
+## 1. Request Validation
+- Confirm user details from HR.
+- Ensure department, manager, and role are provided.
+
+## 2. Account Creation
+- Run `new_user_onboarding.ps1` with appropriate parameters.
+- Verify account creation in system.
+
+## 3. Access & Permissions
+- Add to required groups.
+- Apply department policies.
+
+## 4. Logging & Handover
+- Record details in audit log.
+- Notify requester with credentials (securely).
+
+---
+
+## 🧩 PowerShell Scripts
+
+### 1️⃣ `scripts/new_user_onboarding.ps1`
+
+```powershell
+<#
+.SYNOPSIS
+Creates a new local or AD user and generates a secure password.
+
+.PARAMETER UserName
+Username for the new account.
+
+.PARAMETER FullName
+Full display name of the user.
+
+.PARAMETER Department
+User’s department (for documentation/logging).
+
+.EXAMPLE
+.\new_user_onboarding.ps1 -UserName jsmith -FullName "John Smith" -Department "IT"
+#>
+
+param(
+    [Parameter(Mandatory=$true)][string]$UserName,
+    [Parameter(Mandatory=$true)][string]$FullName,
+    [string]$Department = "General"
+)
+
+# Generate a secure random password
+$Password = [System.Web.Security.Membership]::GeneratePassword(12,3)
+
+Write-Host "Creating new user: $FullName ($UserName)"
+Write-Host "Generated Password: $Password"
+
+# Simulate account creation (replace with AD cmdlets if available)
+New-LocalUser -Name $UserName -FullName $FullName -Password (ConvertTo-SecureString $Password -AsPlainText -Force) -Description "Department: $Department"
+
+# Add to default group
+Add-LocalGroupMember -Group "Users" -Member $UserName
+
+# Log the action
+$LogEntry = "$(Get-Date) - Created user: $UserName - Department: $Department - Password generated securely."
+Add-Content -Path ".\logs\sample_audit_log.txt" -Value $LogEntry
+
+Write-Host "User onboarding complete and logged."
