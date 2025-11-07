@@ -1,0 +1,20 @@
+Documentation (Troubleshooting Checklist)
+
+## 1. Identify the Issue
+- Gather user details: name, device ID, and problem description
+- Verify error messages or screenshots
+
+## 2. Isolate the Problem
+- Check hardware connections
+- Verify network connectivity
+- Review event logs or error reports
+
+## 3. Resolve and Verify
+- Apply solution (driver reinstall, reboot, update, etc.)
+- Confirm with user that issue is resolved
+- Document resolution in ticket system
+
+## 4. Prevent Recurrence
+- Apply updates
+- Schedule maintenance if needed
+- Add notes to Knowledge Base
