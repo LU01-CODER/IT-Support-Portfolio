@@ -1,29 +1,52 @@
-# 🖥️ IT Support Portfolio
+# 👋 Hi, I'm Mluleki Mpemnyama
 
-Welcome to my IT Support Portfolio!  
-This repository demonstrates my technical skills, documentation practices, and understanding of IT support duties and responsibilities.
+## 🔐 Security + IT | Technical Support | Problem Solver
 
----
+I come from a strong background in physical security—CCTV surveillance, alarm monitoring, access control, and control room operations. Over the years, troubleshooting real-world system issues sparked a deeper passion for **IT, technology, and automation**.
 
-## 💼 About Me
-I’m an IT Support Specialist experienced in end-user support, system administration, and troubleshooting hardware, software, and network issues.  
-My focus is on efficiency, security, and customer satisfaction.
+Today, I’m focused on bridging the gap between **traditional security** and **modern IT practices** by learning scripting, system administration, and security-focused technologies.
 
 ---
 
-## 🧰 Skills Demonstrated
-- Windows & Linux system administration  
-- PowerShell, Bash, and Python scripting  
-- Active Directory management  
-- Helpdesk ticketing workflow  
-- Asset management and documentation  
-- Backup and recovery best practices  
-- Security hardening and user policy enforcement  
-- Basic network configuration & troubleshooting
+### 🛠️ What I Work With
+- CCTV & Alarm Monitoring Systems
+- Windows, Linux, Basic Networking
+- Active Directory, O365, Endpoint Support
+- PowerShell, Bash, Python (learning)
+- Ticketing & IT Support Tools
 
 ---
 
-## 📂 Portfolio Contents
+### 🌱 Currently Learning
+- Scripting & automation (PowerShell/Python)
+- Cloud fundamentals (Azure, AWS, OCI)
+- IT security fundamentals and best practices
+- System administration & monitoring tools
+
+---
+
+### 🔎 What I’m Interested In
+- IT support & infrastructure automation  
+- Security technology & digital monitoring  
+- Home lab experiments & scripting projects  
+- Building tools that solve real-world problems  
+
+---
+
+### 📌 Projects Coming Soon
+- Security system log parser
+- IT support automation scripts
+- Documentation templates for control room SOPs
+- Beginner-friendly scripts and tools for security environments
+
+---
+
+### 🤝 Let’s Connect
+💼 LinkedIn: [Your Link]  
+📧 Email: [Your Email]  
+
+### ⚡ Fun Fact
+I started in physical security—but IT turned into the part I love most.
 
 ### 🗂️ Documentation
 - **Incident Report Template:** Demonstrates structured documentation for incidents.  
